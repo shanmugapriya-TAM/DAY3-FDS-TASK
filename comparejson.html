@@ -8,6 +8,8 @@ var prop1 = Object.getOwnPropertyNames(obj1);
 var prop2 = Object.getOwnPropertyNames(obj2);
 for (var i = 0; i < prop1.length; i++) {
     var propname=prop1[i]
+    //compare each property's value individually.
+    //This ensures that the comparison accurately checks for equality or inequality of properties and their values between the two objects.
     if (obj1[propname] === obj2[propname]) {
         console.log("true");
     }
