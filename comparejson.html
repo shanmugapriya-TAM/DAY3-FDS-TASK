@@ -1,0 +1,40 @@
+<html>
+
+<body>
+    <script>
+        var obj1 = { name: "Person 1", age: 5 };
+        var obj2 = { age: 5, name: "Person 1" };
+        
+       // objectLength = Object.keys(obj1).length;
+        //console.log(objectLength)
+//Object.getOwnPropertyNames()===>returns an array 
+var prop1 = Object.getOwnPropertyNames(obj1);
+var prop2 = Object.getOwnPropertyNames(obj2);
+//console.log(prop1)
+//console.log(prop2)
+for (var i = 0; i < prop1.length; i++) {
+    var propname=prop1[i]
+    if (obj1[propname] === obj2[propname]) {
+        console.log("true");
+    }
+    else {
+        console.log("false");
+    }
+  }
+  //console.log("true");
+        //function compares(obj1,obj2){
+            //var string1=JSON.stringify(obj1);
+            //var string2=JSON.stringify(obj2);
+
+            //var response1=JSON.parse(string1);
+            //var response2=JSON.parse(string2);
+           //return string1===string2;
+           // return console.log(string2)
+          //  return console.log(response2)
+        //}
+        //console.log(compares(obj1,obj2))
+      
+    </script>
+</body>
+
+</html>
