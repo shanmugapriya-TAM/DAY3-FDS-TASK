@@ -8,6 +8,7 @@ if(xhr.status>=200&&xhr.status<300){
    var response=JSON.parse(xhr.responseText);
    var newarray=[]
    for(i=0;i<response.length;i++){
+        var objstring={png:response[i].flags.png}
     newarray.push(response[i].flags)
    }
     console.log(newarray)
